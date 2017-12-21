@@ -41,6 +41,7 @@ LOCAL_CFLAGS += -O2
 LOCAL_CFLAGS += -DHAVE_CONFIG_H
 
 LOCAL_SHARED_LIBRARIES := libc libm libcutils libnetutils
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE := iperf
 LOCAL_MODULE_TAGS := optional
 
