@@ -37,6 +37,7 @@ LOCAL_SRC_FILES += \
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/include
 
+LOCAL_CPPFLAGS += -Werror -Wmacro-redefined -Wunused-parameter -Wunused-variable
 LOCAL_CFLAGS += -O2
 LOCAL_CFLAGS += -DHAVE_CONFIG_H
 
