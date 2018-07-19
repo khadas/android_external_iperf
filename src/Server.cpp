@@ -68,8 +68,6 @@
 #include <sys/mman.h>
 #endif
 
-#define UNUSED(...) (void)(__VA_ARGS__)
-
 /* -------------------------------------------------------------------
  * Stores connected socket and socket info.
  * ------------------------------------------------------------------- */
@@ -97,7 +95,6 @@ Server::~Server() {
 }
 
 void Server::Sig_Int( int inSigno ) {
-    UNUSED(inSigno);
 }
 
 /* ------------------------------------------------------------------- 

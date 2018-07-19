@@ -37,10 +37,9 @@ LOCAL_SRC_FILES += \
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/include
 
-LOCAL_CPPFLAGS += -Werror -Wmacro-redefined -Wunused-parameter -Wunused-variable
 LOCAL_CFLAGS += -O2
 LOCAL_CFLAGS += -DHAVE_CONFIG_H
-
+LOCAL_CFLAGS += -Wno-error
 LOCAL_SHARED_LIBRARIES := libc libm libcutils libnetutils
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE := iperf

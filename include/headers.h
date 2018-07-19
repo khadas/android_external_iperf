@@ -71,6 +71,9 @@
     #endif
 #endif /* HAVE_CONFIG_H */
 
+/* turn off assert debugging */
+#define NDEBUG
+
 /* standard C headers */
 #include <stdlib.h>
 #include <stdio.h>
